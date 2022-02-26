@@ -1,0 +1,35 @@
+*.pth
+*.zip
+train-coarse/out*
+train-fine/out*
+eval/maps/*
+eval/result
+.vscode
+
+
+# result
+exp
+exp_1
+tb_tmp
+tb_runs*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+z_*
+*.csv
+*.png
+test_res*
+eval_res*
+pse_lab_vis*
+
+# dataset
+data
+data_1
+data_bk
+
+*lab3*
+
+debug*
