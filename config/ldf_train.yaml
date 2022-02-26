@@ -1,0 +1,50 @@
+RUNS_NAME: "ldf_train"
+TB_ROOT: tb_runs
+SEED: 777
+MODEL:
+  # WARMUP_PATH: warmup_checkpoint_ldf.pth
+  NAME: "LDF"
+  BAKCBONE_PATH: "checkpoints/resnet50-19c8e357.pth"
+DATA:
+  STRONG_AUG: False
+  FDA_P: 0.0
+  ET_P: 0.5
+  
+  CJ_P: 0.5
+  CJ_B: 0.1
+  CJ_C: 0.1
+  CJ_S: 0.1
+  TRAIN_BATCH_SIZE: 32
+  
+SOLVER:
+  ROUND_NUM : 6
+  WARMUP_EPOCH: 48
+  EPOCH_PER_ROUND: 36
+  ITER_PER_EPOCH: 256
+  
+  PSEUDO_UPDATE_POLICY: 'src_half'
+  SRC_INIT_PORTION: 0.5
+
+  PSE_POLICY: 'portion'
+  TGT_INIT_PORTION: 0.1
+  TGT_MAX_PORTION: 0.6
+  PSE_FILTER_PORTION: 0.0
+
+  PIXEL_WEIGHT: 20
+  
+  ONLY_MASK: True
+  ONE_HOT: False
+  
+  # LR_DECAY_RATE: 0.75
+  # LR: 0.05
+  # BASE_LR: 0.005
+
+  LR_DECAY_RATE: 0.9
+  LR: 0.05
+  BASE_LR: 0.0025
+
+TEST:
+  EVAL_INTERVAL: 4
+  DS_EVAL_TRAIN: 
+    - 'duts_te'
+    - 'duts_val'

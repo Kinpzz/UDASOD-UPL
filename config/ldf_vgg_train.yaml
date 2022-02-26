@@ -1,0 +1,45 @@
+RUNS_NAME: "ldf_vgg_train_portion"
+TB_ROOT: tb_runs
+SEED: 99
+MODEL:
+
+  NAME: "LDF_VGG"
+  BAKCBONE_PATH: "checkpoints/resnet50-19c8e357.pth"
+DATA:
+  STRONG_AUG: False
+  FDA_P: 0.0
+  ET_P: 0.5
+  CJ_P: 0.5
+  TRAIN_BATCH_SIZE: 16
+
+SOLVER:
+  ROUND_NUM : 6
+  WARMUP_EPOCH: 48
+  EPOCH_PER_ROUND: 36
+  ITER_PER_EPOCH: 512
+  
+  PSEUDO_UPDATE_POLICY: 'src_half'
+  SRC_INIT_PORTION: 0.5
+
+  PSE_POLICY: 'portion'
+  TGT_INIT_PORTION: 0.1
+  TGT_MAX_PORTION: 0.6
+  PSE_FILTER_PORTION: 0.
+
+  # PSE_POLICY: 'threshold'
+  # VAR_THRESHOLD: '0.001'
+  
+  LR_DECAY_RATE: 0.9
+  ONLY_MASK: True
+  ONE_HOT: True
+
+  LR: 0.025
+  BASE_LR: 0.001
+
+  IMG_RECORD_INTERVAL: 1000
+
+TEST:
+  EVAL_INTERVAL: 4
+  DS_EVAL_TRAIN: 
+    - 'duts_te'
+    - 'duts_val'

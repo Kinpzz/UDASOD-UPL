@@ -1,0 +1,23 @@
+TEST:
+  # dataset to evaluated on
+  EVAL_DATASET:
+    - "duts_te"
+    - "eccsd"
+    - "duts_om"
+    - "hkuis"
+    # - "thur"
+    - "pascal_s"
+    - "sod"
+    # - "msra_b"
+
+  # metric to perform
+  EVAL_METRICS:
+    - "sm"
+    - "wfm"
+    - "mae"
+  
+  # metric to write into file
+  EVAL_REPORT_METRICS:
+    - "sm"
+    - "wfm"
+    - "mae"
