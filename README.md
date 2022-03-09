@@ -4,7 +4,7 @@
 **Unsupervised Domain Adaptive Salient Object Detection Through Uncertainty-Aware Pseudo-Label Learning** <br />
 Pengxiang Yan, Ziyi Wu, Mengmeng Liu,  Kun Zeng, Liang Lin, Guanbin Li <br />
 Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI), 2022 <br />
-\[[Paper](https://arxiv.org/abs/2202.13170)\] [Supp(coming soon)]
+\[[Paper](https://arxiv.org/abs/2202.13170)\] \[[Supp](https://drive.google.com/file/d/11gF5eHHXOBXuk_PtfmE4sEXAejPg8flT/view?usp=sharing)\]
 
 ## Install
 
@@ -27,7 +27,9 @@ $ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--c
 ### Proposed dataset - SYNSOD
 <img align="right" src="fig/synsod.png" width="300px">
 
-In this paper, we proposed a synthetic salient object detection dataset (SYDSOD) including 11,197 images and corresponding pixel-level annotations. The dataset can be obtained from the following links \[[Google Drive](https://drive.google.com/file/d/1x3u-4Wn0t-OwMTbbJyowWqNdHk8jcXUd/view?usp=sharing)\] \[[Baidu Pan](https://pan.baidu.com/s/127VoLupPmVM3M2lGcmjiiA)\] (passwd:sa1k)
+In this paper, we proposed a synthetic salient object detection dataset (SYDSOD) including 11,197 images and corresponding pixel-level annotations. 
+* Dataset download links: \[[Google Drive](https://drive.google.com/file/d/1x3u-4Wn0t-OwMTbbJyowWqNdHk8jcXUd/view?usp=sharing)\] \[[Baidu Pan](https://pan.baidu.com/s/127VoLupPmVM3M2lGcmjiiA)\] (passwd:sa1k). 
+* Dataset generation code: \[[copy-and-paste](https://github.com/luimoli/composite-graph)\].
 
 
 ### Public datasets
@@ -107,4 +109,4 @@ Thanks to the third-party libraries:
 For any questions, feel free to open an issue or contact us:
 * Pengxiang Yan [@Kinpzz](https://github.com/Kinpzz), Email: yanpx (at) live.com
 * Ziyi Wu [@Z1Wu](https://github.com/Z1Wu), Email: wuzy39 (at) sysu.edu.cn
-
+* For dataset generation part: Mengmeng Liu [@luimoli](https://github.com/luimoli/), Email: liumm97 (at) outlook.com
