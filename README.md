@@ -4,7 +4,7 @@
 **Unsupervised Domain Adaptive Salient Object Detection Through Uncertainty-Aware Pseudo-Label Learning** <br />
 Pengxiang Yan, Ziyi Wu, Mengmeng Liu,  Kun Zeng, Liang Lin, Guanbin Li <br />
 Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI), 2022 <br />
-\[[Paper](https://arxiv.org/abs/2202.13170)\] \[[Supp](https://drive.google.com/file/d/11gF5eHHXOBXuk_PtfmE4sEXAejPg8flT/view?usp=sharing)\]
+\[[Paper](https://arxiv.org/abs/2202.13170)\] \[[Supplemental Materials](https://drive.google.com/file/d/11gF5eHHXOBXuk_PtfmE4sEXAejPg8flT/view?usp=sharing)\]
 
 ## Install
 
