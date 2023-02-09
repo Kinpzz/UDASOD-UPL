@@ -113,5 +113,5 @@ Thanks to the third-party libraries:
 ## Contact
 For any questions, feel free to open an issue or contact us:
 * Pengxiang Yan [@Kinpzz](https://github.com/Kinpzz), Email: yanpx (at) live.com
-* Ziyi Wu [@Z1Wu](https://github.com/Z1Wu), Email: wuzy39 (at) sysu.edu.cn
+* Ziyi Wu [@Z1Wu](https://github.com/Z1Wu), Email: wuzy39 (at) mail2.sysu.edu.cn
 * For dataset generation part: Mengmeng Liu [@luimoli](https://github.com/luimoli/), Email: liumm97 (at) outlook.com
