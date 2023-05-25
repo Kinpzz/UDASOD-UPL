@@ -35,6 +35,41 @@ In this paper, we proposed a synthetic salient object detection dataset (SYDSOD)
 ### Public datasets
 Our code might involve the following datasets \[[PASCAL-S](http://cbi.gatech.edu/salobj/)\], \[[ECSSD](http://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html)\], \[[HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html)\], \[[DUT-OMRON](http://saliencydetection.net/dut-omron/)\], \[[DUTS](http://saliencydetection.net/duts/)\], \[[SOD](https://github.com/lartpang/awesome-segmentation-saliency-dataset#sod)\]. Please download them datasets and unzip them into `data` folder when necessary.
 
+The `data` folder structure should be reorganized like this:
+```
+├── CG4
+│   ├── image
+│   ├── mask
+│   ├── test.txt
+│   └── train.txt
+├── DUT-OMRON
+│   ├── image
+│   ├── mask
+│   └── test.txt
+├── DUTS
+│   ├── image
+│   ├── mask
+│   ├── test.txt
+│   ├── train.txt
+│   └── train_val.txt
+├── ECSSD
+│   ├── image
+│   ├── mask
+│   └── test.txt
+├── HKU-IS
+│   ├── image
+│   ├── mask
+│   └── test.txt
+├── PASCAL-S
+│   ├── image
+│   ├── mask
+│   └── test.txt
+└── SOD
+    ├── image
+    ├── mask
+    └── test.txt
+```
+
 ## Evaluation 
 
 You can download the predicted saliency maps for evaluation: \[[Google Drive](https://drive.google.com/file/d/1-ZmOvW4Djo3Ej1XLcDR1VgEdWGfsYD-A/view?usp=sharing)\] \[[Baidu Pan](https://pan.baidu.com/s/1n4Y5PuaRZOwR7Zk3d4EsUA)\](passwd: 4q1l)
